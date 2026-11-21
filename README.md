@@ -6,6 +6,10 @@
 
 A one-page newspaper front page summing up Saturday 21 November 2026: Russia's biggest barrage on Kyiv — and Poland, the AI stock rout that pushed the S&P 500 into correction, the ICJ genocide ruling on Myanmar, and the day's briefs from Lima to Antalya. `render.py` draws the page with Pillow from same-day reporting verified across several outlets; `main.py` copies the finished image to `/output/entry.png`.
 
+## Sources
+
+BBC News, Financial Times, The Guardian, Al Jazeera, Reuters, France 24, CBS News, El País.
+
 ## Run it
 
 ```sh

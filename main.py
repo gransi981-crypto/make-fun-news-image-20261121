@@ -20,7 +20,11 @@ def main():
         data = f.read()
     with open(dst, "wb") as f:
         f.write(data)
-    print(f"wrote {dst} ({len(data)} bytes)")
+    with open(dst, "rb") as f:
+        written = f.read()
+    if written != data:
+        raise SystemExit(f"copy mismatch: {dst} differs from {src}")
+    print(f"wrote {dst} ({len(data)} bytes, verified)")
 
 
 if __name__ == "__main__":
